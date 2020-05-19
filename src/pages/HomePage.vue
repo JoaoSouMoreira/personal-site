@@ -5,7 +5,7 @@
       v-observe-visibility="{
         callback: visibilityChanged,
         intersection: {
-          threshold: 0.5,
+          threshold: 1,
         },
       }"
     />
@@ -13,7 +13,7 @@
       v-observe-visibility="{
         callback: visibilityChanged,
         intersection: {
-          threshold: 0.5,
+          threshold: 1,
         },
       }"
     />
@@ -21,7 +21,7 @@
       v-observe-visibility="{
         callback: visibilityChanged,
         intersection: {
-          threshold: 0.5,
+          threshold: 1,
         },
       }"
     />

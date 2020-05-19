@@ -36,6 +36,13 @@
           >
         </a>
       </li>
+      <li class="text-item">
+        <a
+          href
+          class="social-media-item social-media-text"
+          @click="downloadCV"
+        >CV</a>
+      </li>
       <li>
         <a
           href="https://www.instagram.com/joaosomoreira"
@@ -47,13 +54,6 @@
             alt="Instagram"
           >
         </a>
-      </li>
-      <li>
-        <a
-          href
-          class="social-media-item social-media-text"
-          @click="downloadCV"
-        >CV</a>
       </li>
     </ul>
   </div>
@@ -79,10 +79,12 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
+@import '../scss/variables.scss';
+
 .sidebar-container {
   position: fixed;
-  top: 150px;
+  top: 100px;
   left: 10%;
   display: flex;
   flex-direction: column;
@@ -93,33 +95,51 @@ export default {
   list-style: none;
   display: flex;
   flex-direction: column;
+
+  li {
+    flex: 1;
+    padding: 0;
+    width: 150px;
+    height: 36px;
+    text-align: center;
+  }
 }
 
-.menu li,
-.social-media li {
-  height: 36px;
-  margin: 5px;
-  text-align: center;
-}
+.menu li {
 
-.section-link {
-  color: #f2f2f2;
-  text-decoration: none;
-  padding: 1em 2em;
-}
+  .section-link {
+    display: block;
+    padding: 1em;
+    text-decoration: none;
+    background-color: $color-dark;
+    color: $font-primary;
+  }
 
-.active {
-  color: #aaaaaa;
+  .active {
+    background-color: $color-primary;
+    color: $font-primary;
+  }
 }
 
 .social-media-item {
+  display: block;
   padding: 5px;
+}
+
+.text-item {
+  text-align: center;
+  margin: 0 auto;
 }
 
 .social-media-text {
   width: 36px;
   height: 36px;
-  margin-top: 10px;
+  text-align: center;
+  vertical-align: middle;
+  margin: 0 auto;
+  margin-bottom: 5px;
+  padding: 0;
+  line-height: 36px;
   background-color: #d2d2d2;
   text-decoration: none;
   color: #121212;

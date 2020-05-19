@@ -18,39 +18,41 @@
 </template>
 
 <script>
-  export default {
-    name: 'ToolBar',
-    data() {
-      return {
-        routes: this.$router.options.routes.filter(route => route.name),
-      }
-    },
+export default {
+  name: "ToolBar",
+  data() {
+    return {
+      routes: this.$router.options.routes.filter(route => route.name)
+    };
   }
+};
 </script>
 
-<style scoped>
-  .toolbar-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    width: 100%;
-  }
+<style lang="scss" scoped>
+@import "../scss/variables.scss";
 
-  .menu {
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-  }
+.toolbar-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 100%;
+}
 
-  .menu-link {
-    color: #f2f2f2;
-    text-decoration: none;
-    padding: 1em 2em;
-    border-bottom: 3px solid #efefef;
-  }
+.menu {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+}
 
-  .active {
-    color: #aaaaaa;
-    border-bottom: 3px solid #aaaaaa;
-  }
+.menu-link {
+  color: $color-light;
+  text-decoration: none;
+  padding: 1em 2em;
+  border-bottom: 3px solid $color-light;
+}
+
+.active {
+  color: $color-primary;
+  border-bottom: 3px solid $color-primary;
+}
 </style>

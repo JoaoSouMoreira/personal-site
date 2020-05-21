@@ -18,11 +18,11 @@ export default {
     sourcemap: true,
   },
   plugins: [
-    ServePlugin({
+    process.env.ROLLUP_WATCH ? ServePlugin({
       contentBase: 'dist',
       historyApiFallback: '/index.html',
-    }),
-    LiveReloadPlugin('dist'),
+    }) : null,
+    process.env.ROLLUP_WATCH ? LiveReloadPlugin('dist') : null,
     VuePlugin({
       needMap: false,
     }),

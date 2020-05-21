@@ -59,7 +59,7 @@ export default {
   },
   methods: {
     visibilityChanged: function(isVisible, entry) {
-      console.log(entry.target.id + ' ' + isVisible);
+      // console.log(entry.target.id + ' ' + isVisible);
       if (isVisible && !this.activeSection && entry.target.id === 'introduction') {
         return;
       }

@@ -98,44 +98,44 @@ import RollupIcon from 'simple-icons/icons/rollup-dot-js.svg';
 export default {
   name: 'SkillsSection',
   components: {
+    TypescriptIcon,
     JSIcon,
     PHPIcon,
-    ReactIcon,
-    ReduxIcon,
-    VueIcon,
     GraphQLIcon,
-    JestIcon,
-    NodeIcon,
+    SASSIcon,
+    CSS3Icon,
+    HTML5Icon,
+    MySQLIcon,
+    JavaIcon,
+    PythonIcon,
     GoIcon,
+    CSharpIcon,
+    NodeIcon,
+    AngularIcon,
+    ReactIcon,
+    VueIcon,
+    JQueryIcon,
+    IonicIcon,
+    MagentoIcon,
+    LaravelIcon,
+    JestIcon,
     AWSIcon,
     ServerlessIcon,
     WebpackIcon,
     MaterialUIIcon,
-    SASSIcon,
-    CSS3Icon,
-    IonicIcon,
-    AngularIcon,
     CordovaIcon,
-    TypescriptIcon,
-    JavaIcon,
     ApacheIcon,
     NginxIcon,
     GulpIcon,
     GruntIcon,
-    MagentoIcon,
-    LaravelIcon,
-    PythonIcon,
-    CSharpIcon,
-    HTML5Icon,
-    MySQLIcon,
-    JQueryIcon,
     RollupIcon,
+    ReduxIcon,
   },
   data() {
     return {
       languages: [
         { name: 'Javascript', icon: 'JSIcon', meter: '80%' },
-        { name: 'Typescript', icon: 'TypescriptIcon', meter: '60%' },
+        { name: 'Typescript', icon: 'TypescriptIcon', meter: '70%' },
         { name: 'PHP', icon: 'PHPIcon', meter: '60%' },
         { name: 'HTML5', icon: 'HTML5Icon', meter: '80%' },
         { name: 'CSS3', icon: 'CSS3Icon', meter: '80%' },
@@ -145,18 +145,33 @@ export default {
         { name: 'Java', icon: 'JavaIcon', meter: '30%' },
         { name: 'Python', icon: 'PythonIcon', meter: '30%' },
         { name: 'GraphQL', icon: 'GraphQLIcon', meter: '70%' },
+        { name: 'MySQL', icon: 'MySQLIcon', meter: '30%' },
       ],
       frameworks: [
         { name: 'React', icon: 'ReactIcon', meter: '90%' },
-        { name: 'Angular', icon: 'AngularIcon', meter: '70%' },
-        { name: 'Vue', icon: 'VueIcon', meter: '50%' },
+        { name: 'Angular', icon: 'AngularIcon', meter: '80%' },
+        { name: 'Vue', icon: 'VueIcon', meter: '60%' },
+        { name: 'Ionic', icon: 'IonicIcon', meter: '70%' },
         { name: 'jQuery', icon: 'JQueryIcon', meter: '80%' },
+        { name: 'Magento 2', icon: 'MagentoIcon', meter: '50%' },
+        { name: 'Laravel', icon: 'LaravelIcon', meter: '40%' },
       ],
       tools: [
         { name: 'Redux', icon: 'ReduxIcon', meter: '90%' },
+        { name: 'Flux', icon: '', meter: '90%' },
+        { name: 'Alt.js', icon: '', meter: '90%' },
+        { name: 'Jest', icon: 'JestIcon', meter: '80%' },
+        { name: 'Karma', icon: '', meter: '80%' },
+        { name: 'Jasmine', icon: '', meter: '80%' },
         { name: 'Webpack', icon: 'WebpackIcon', meter: '90%' },
-        { name: 'Apollo Client', icon: 'GraphQLIcon', meter: '50%' },
         { name: 'Rollup', icon: 'RollupIcon', meter: '80%' },
+        { name: 'Gulp', icon: 'GulpIcon', meter: '80%' },
+        { name: 'Grunt', icon: 'GruntIcon', meter: '70%' },
+        { name: 'Serverless', icon: 'ServerlessIcon', meter: '70%' },
+        { name: 'AWS', icon: 'AWSIcon', meter: '50%' },
+        { name: 'Apollo Client', icon: 'GraphQLIcon', meter: '70%' },
+        { name: 'Material UI', icon: 'MaterialUIIcon', meter: '80%' },
+        { name: 'Cordova', icon: 'CordovaIcon', meter: '50%' },
       ],
     }
   }
@@ -197,11 +212,18 @@ export default {
   }
 }
 
+@media (max-width: 800px) {
+  .skills-container ul {
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+  }
+}
+
 .meter {
   width: 150px;
 	height: 10px;
 	position: relative;
-	background: #555;
+	background: #222;
 	-moz-border-radius: 25px;
 	-webkit-border-radius: 25px;
 	border-radius: 25px;

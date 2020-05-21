@@ -41,6 +41,7 @@ export default {
         { src: 'src/assets/favicon/**/*.png', dest: 'dist/assets/favicon' },
         { src: 'src/assets/favicon/favicon.ico', dest: 'dist' },
         { src: 'src/assets/favicon/manifest.webmanifest', dest: 'dist' },
+        { src: '_redirects', dest: 'dist' },
       ]
     }),
     ReplacePlugin({

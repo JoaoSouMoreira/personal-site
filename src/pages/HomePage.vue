@@ -13,7 +13,7 @@
       v-observe-visibility="{
         callback: visibilityChanged,
         intersection: {
-          threshold: 0.3,
+          threshold: 0.2,
         },
       }"
     />
@@ -21,7 +21,7 @@
       v-observe-visibility="{
         callback: visibilityChanged,
         intersection: {
-          threshold: 0.5,
+          threshold: 0.4,
         },
       }"
     />
@@ -54,12 +54,17 @@ export default {
   },
   data() {
     return {
-      activeSection: "",
+      activeSection: window.location.hash || '',
     };
   },
   methods: {
     visibilityChanged: function(isVisible, entry) {
-      if (isVisible && !this.isInitial) {
+      console.log(entry.target.id + ' ' + isVisible);
+      if (isVisible && !this.activeSection && entry.target.id === 'introduction') {
+        return;
+      }
+
+      if (isVisible) {
         this.activeSection = entry.target.id;
         window.location.hash = entry.target.id;
       }

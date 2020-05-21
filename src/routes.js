@@ -15,9 +15,10 @@ export default new VueRouter({
       name: 'Home',
       meta: {
         sections: [
-          { path: '', name: 'Introduction' },
+          { path: 'introduction', name: 'Introduction' },
           { path: 'experience', name: 'Experience' },
           { path: 'skills', name: 'Skills' },
+          { path: 'education', name: 'Education' },
         ],
       },
     },

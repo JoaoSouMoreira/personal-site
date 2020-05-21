@@ -1,8 +1,6 @@
 <template>
   <div id="home-page">
-    <p>
-      Footer
-    </p>
+    <p />
   </div>
 </template>
 

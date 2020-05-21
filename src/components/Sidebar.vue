@@ -7,7 +7,7 @@
       >
         <a
           :class="[activeSection === section.path ? 'section-link active' : 'section-link']"
-          :href="`#${section.path}`"
+          @click="handleScroll(section.path)"
         >{{ section.name }}</a>
       </li>
     </ul>
@@ -43,6 +43,12 @@
           @click="downloadCV"
         >CV</a>
       </li>
+      <li class="text-item">
+        <a
+          href="mailto:joaosomoreira@gmail.com?Subject=Awesome%20Website%21"
+          class="social-media-item social-media-text"
+        >@</a>
+      </li>
       <li>
         <a
           href="https://www.instagram.com/joaosomoreira"
@@ -71,6 +77,11 @@ export default {
     };
   },
   methods: {
+    handleScroll: path => {
+      document.getElementById(path).scrollIntoView({
+        behavior: 'smooth'
+      });
+    },
     downloadCV: event => {
       event.preventDefault();
       window.open("/assets/CV.pdf", "/assets/CV.pdf").focus();
@@ -85,7 +96,7 @@ export default {
 .sidebar-container {
   position: fixed;
   top: 100px;
-  left: 10%;
+  left: 20px;
   display: flex;
   flex-direction: column;
 }
@@ -102,54 +113,93 @@ export default {
     width: 150px;
     height: 36px;
     text-align: center;
+
+    .social-media-item {
+      display: block;
+      padding: 5px;
+
+      img {
+        width: 36px;
+        height: 36px;
+      }
+    }
+
+    .social-media-text {
+      width: 36px;
+      height: 36px;
+      text-align: center;
+      vertical-align: middle;
+      margin: 8px auto;
+      padding: 0;
+      line-height: 40px;
+      background-color: $color-primary;
+      text-decoration: none;
+      color: $font-primary;
+      font-size: 20px;
+      font-weight: bold;
+      border-radius: 5px;
+    }
+  }
+
+  .text-item {
+    text-align: center;
+    margin: 0 auto;
   }
 }
 
-.menu li {
+.menu {
 
-  .section-link {
-    display: block;
-    padding: 1em;
-    text-decoration: none;
-    background-color: $color-dark;
-    color: $font-primary;
+  li {
+    cursor: pointer;
+
+    .section-link {
+      display: block;
+      padding: 1em;
+      text-decoration: none;
+      background-color: $color-dark;
+      color: $font-primary;
+    }
+
+    .active {
+      background-color: $color-primary;
+      color: $font-primary;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .menu {
+    margin: 10px auto;
+
+    li {
+      width: 300px;
+    }
   }
 
-  .active {
-    background-color: $color-primary;
-    color: $font-primary;
+  .sidebar-container {
+    position: relative;
+    top: 0;
+    left: 0;
+
+    .social-media {
+      flex-direction: row;
+      padding: 0;
+
+      li {
+        margin: 0;
+        width: auto;
+      }
+
+      .social-media-text {
+        margin-top: 5px;
+      }
+    }
   }
 }
 
-.social-media-item {
-  display: block;
-  padding: 5px;
-}
-
-.text-item {
-  text-align: center;
-  margin: 0 auto;
-}
-
-.social-media-text {
-  width: 36px;
-  height: 36px;
-  text-align: center;
-  vertical-align: middle;
-  margin: 0 auto;
-  margin-bottom: 5px;
-  padding: 0;
-  line-height: 36px;
-  background-color: #d2d2d2;
-  text-decoration: none;
-  color: #121212;
-  font-size: 20px;
-  font-weight: bold;
-  border-radius: 5px;
-}
-
-.social-media-item img {
-  width: 36px;
-  height: 36px;
+@media (max-width: 30em) {
+  .menu {
+    display: none;
+  }
 }
 </style>

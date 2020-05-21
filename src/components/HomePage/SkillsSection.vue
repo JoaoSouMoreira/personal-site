@@ -1,49 +1,237 @@
 <template>
-  <div id="skills">
-    <p>
-      Very long text
-    </p>
-    <p>
-      Very long text
-    </p>
-    <p>
-      Very long text
-    </p>
-    <p>
-      Very long text
-    </p>
-    <p>
-      Very long text
-    </p>
-    <p>
-      Very long text
-    </p>
-    <p>
-      Very long text
-    </p>
-    <p>
-      Very long text
-    </p>
-    <p>
-      Very long text
-    </p>
-    <p>
-      Very long text
-    </p>
+  <div
+    id="skills"
+    class="skills-container"
+  >
+    <h1>Skills</h1>
+    <h2>Languages</h2>
+    <ul>
+      <li
+        v-for="language in languages"
+        :key="language.name"
+      >
+        <div class="skill-item">
+          <component
+            :is="language.icon"
+            class="icon"
+          />
+          <span class="label">{{ language.name }}</span>
+        </div>
+        <div class="meter">
+          <span :style="{ width: language.meter }" />
+        </div>
+      </li>
+    </ul>
+    <h2>Frameworks</h2>
+    <ul>
+      <li
+        v-for="framework in frameworks"
+        :key="framework.name"
+      >
+        <div class="skill-item">
+          <component
+            :is="framework.icon"
+            class="icon"
+          />
+          <span class="label">{{ framework.name }}</span>
+        </div>
+        <div class="meter">
+          <span :style="{ width: framework.meter }" />
+        </div>
+      </li>
+    </ul>
+    <h2>Tools</h2>
+    <ul>
+      <li
+        v-for="tool in tools"
+        :key="tool.name"
+      >
+        <div class="skill-item">
+          <component
+            :is="tool.icon"
+            class="icon"
+          />
+          <span class="label">{{ tool.name }}</span>
+        </div>
+        <div class="meter">
+          <span :style="{ width: tool.meter }" />
+        </div>
+      </li>
+    </ul>
   </div>
 </template>
 
 <script>
-  export default {
-    name: 'SkillsSection',
+import JSIcon from 'simple-icons/icons/javascript.svg';
+import PHPIcon from 'simple-icons/icons/php.svg';
+import ReactIcon from 'simple-icons/icons/react.svg';
+import ReduxIcon from 'simple-icons/icons/redux.svg';
+import VueIcon from 'simple-icons/icons/vue-dot-js.svg';
+import GraphQLIcon from 'simple-icons/icons/graphql.svg';
+import JestIcon from 'simple-icons/icons/jest.svg';
+import NodeIcon from 'simple-icons/icons/node-dot-js.svg';
+import GoIcon from 'simple-icons/icons/go.svg';
+import AWSIcon from 'simple-icons/icons/amazonaws.svg';
+import ServerlessIcon from 'simple-icons/icons/serverless.svg';
+import WebpackIcon from 'simple-icons/icons/webpack.svg';
+import MaterialUIIcon from 'simple-icons/icons/material-ui.svg';
+import SASSIcon from 'simple-icons/icons/sass.svg';
+import CSS3Icon from 'simple-icons/icons/css3.svg';
+import IonicIcon from 'simple-icons/icons/ionic.svg';
+import AngularIcon from 'simple-icons/icons/angular.svg';
+import CordovaIcon from 'simple-icons/icons/apachecordova.svg';
+import TypescriptIcon from 'simple-icons/icons/typescript.svg';
+import JavaIcon from 'simple-icons/icons/java.svg';
+import ApacheIcon from 'simple-icons/icons/apache.svg';
+import NginxIcon from 'simple-icons/icons/nginx.svg';
+import GulpIcon from 'simple-icons/icons/gulp.svg';
+import GruntIcon from 'simple-icons/icons/grunt.svg';
+import MagentoIcon from 'simple-icons/icons/magento.svg';
+import LaravelIcon from 'simple-icons/icons/laravel.svg';
+import PythonIcon from 'simple-icons/icons/python.svg';
+import CSharpIcon from 'simple-icons/icons/csharp.svg';
+import HTML5Icon from 'simple-icons/icons/html5.svg';
+import MySQLIcon from 'simple-icons/icons/mysql.svg';
+import JQueryIcon from 'simple-icons/icons/jquery.svg';
+import RollupIcon from 'simple-icons/icons/rollup-dot-js.svg';
+
+export default {
+  name: 'SkillsSection',
+  components: {
+    JSIcon,
+    PHPIcon,
+    ReactIcon,
+    ReduxIcon,
+    VueIcon,
+    GraphQLIcon,
+    JestIcon,
+    NodeIcon,
+    GoIcon,
+    AWSIcon,
+    ServerlessIcon,
+    WebpackIcon,
+    MaterialUIIcon,
+    SASSIcon,
+    CSS3Icon,
+    IonicIcon,
+    AngularIcon,
+    CordovaIcon,
+    TypescriptIcon,
+    JavaIcon,
+    ApacheIcon,
+    NginxIcon,
+    GulpIcon,
+    GruntIcon,
+    MagentoIcon,
+    LaravelIcon,
+    PythonIcon,
+    CSharpIcon,
+    HTML5Icon,
+    MySQLIcon,
+    JQueryIcon,
+    RollupIcon,
+  },
+  data() {
+    return {
+      languages: [
+        { name: 'Javascript', icon: 'JSIcon', meter: '80%' },
+        { name: 'Typescript', icon: 'TypescriptIcon', meter: '60%' },
+        { name: 'PHP', icon: 'PHPIcon', meter: '60%' },
+        { name: 'HTML5', icon: 'HTML5Icon', meter: '80%' },
+        { name: 'CSS3', icon: 'CSS3Icon', meter: '80%' },
+        { name: 'SCSS', icon: 'SASSIcon', meter: '70%' },
+        { name: 'Go', icon: 'GoIcon', meter: '40%' },
+        { name: 'C#', icon: 'CSharpIcon', meter: '40%' },
+        { name: 'Java', icon: 'JavaIcon', meter: '30%' },
+        { name: 'Python', icon: 'PythonIcon', meter: '30%' },
+        { name: 'GraphQL', icon: 'GraphQLIcon', meter: '70%' },
+      ],
+      frameworks: [
+        { name: 'React', icon: 'ReactIcon', meter: '90%' },
+        { name: 'Angular', icon: 'AngularIcon', meter: '70%' },
+        { name: 'Vue', icon: 'VueIcon', meter: '50%' },
+        { name: 'jQuery', icon: 'JQueryIcon', meter: '80%' },
+      ],
+      tools: [
+        { name: 'Redux', icon: 'ReduxIcon', meter: '90%' },
+        { name: 'Webpack', icon: 'WebpackIcon', meter: '90%' },
+        { name: 'Apollo Client', icon: 'GraphQLIcon', meter: '50%' },
+        { name: 'Rollup', icon: 'RollupIcon', meter: '80%' },
+      ],
+    }
   }
+}
 </script>
 
-<style scoped>
-  .skills-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    width: 100%;
+<style lang="scss" scoped>
+@import '../../scss/variables.scss';
+
+.skills-container {
+  margin-bottom: 80px;
+
+  ul {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 20px;
+    margin-bottom: 40px;
+    padding: 0;
+
+    li {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-content: start;
+      justify-content: start;
+      list-style: none;
+
+      .skill-item {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+
+        .label {
+          margin-left: 10px;
+        }
+      }
+    }
   }
+}
+
+.meter {
+  width: 150px;
+	height: 10px;
+	position: relative;
+	background: #555;
+	-moz-border-radius: 25px;
+	-webkit-border-radius: 25px;
+	border-radius: 25px;
+	padding: 5px;
+  box-shadow: inset 0 -1px 1px rgba(255,255,255,0.3);
+
+  & > span {
+    display: block;
+    height: 100%;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color: $color-primary;
+    background-image: linear-gradient(
+      center bottom,
+      $color-primary 37%,
+      rgb(84,240,84) 69%
+    );
+    box-shadow:
+      inset 0 2px 9px  rgba(255,255,255,0.3),
+      inset 0 -2px 6px rgba(0,0,0,0.4);
+    position: relative;
+    overflow: hidden;
+  }
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  fill: $color-primary;
+}
 </style>

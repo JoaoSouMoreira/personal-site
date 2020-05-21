@@ -25,35 +25,18 @@
 
 <style lang="scss" scoped>
   .container {
-    display: flex;
-    flex-direction: column;
-    max-width: 900px;
     margin: 0 auto;
-
-    &.mobile {
-      max-width: 450px;
-    }
-
-    &.tablet {
-      max-width: 800px;
-    }
+    max-width: 800px;
   }
 
   .menu-container {
     width: 100%;
-    display: flex;
-    flex-direction: row;
+    margin: 0 auto;
   }
 
-  @media (min-width: 768px) and (max-width: 1023px) {
+  @media (max-width: 48em) {
     .container {
-      max-width: 800px;
-    }
-  }
-
-  @media (max-width: 768px) {
-    .container {
-      max-width: 600px;
+      width: 90%;
     }
   }
 </style>

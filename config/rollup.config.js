@@ -7,6 +7,7 @@ import { eslint } from "rollup-plugin-eslint";
 import ResolvePlugin from '@rollup/plugin-node-resolve';
 import CopyPlugin from 'rollup-plugin-copy';
 import ReplacePlugin from '@rollup/plugin-replace';
+import SVGPlugin from 'rollup-plugin-vue-inline-svg';
 
 export default {
   input: 'src/index.js',
@@ -45,6 +46,7 @@ export default {
     ReplacePlugin({
       'process.env.NODE_ENV': JSON.stringify('development'),
       'process.env.VUE_ENV': JSON.stringify('browser')
-    })
+    }),
+    SVGPlugin(),
   ]
 }

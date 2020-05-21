@@ -5,7 +5,7 @@
       v-observe-visibility="{
         callback: visibilityChanged,
         intersection: {
-          threshold: 1,
+          threshold: 0.5,
         },
       }"
     />
@@ -13,7 +13,7 @@
       v-observe-visibility="{
         callback: visibilityChanged,
         intersection: {
-          threshold: 1,
+          threshold: 0.3,
         },
       }"
     />
@@ -21,7 +21,15 @@
       v-observe-visibility="{
         callback: visibilityChanged,
         intersection: {
-          threshold: 1,
+          threshold: 0.5,
+        },
+      }"
+    />
+    <EducationSection
+      v-observe-visibility="{
+        callback: visibilityChanged,
+        intersection: {
+          threshold: 0.5,
         },
       }"
     />
@@ -33,13 +41,16 @@ import Sidebar from "../components/Sidebar.vue";
 import IntroductionSection from "../components/HomePage/IntroductionSection.vue";
 import ExperienceSection from "../components/HomePage/ExperienceSection.vue";
 import SkillsSection from "../components/HomePage/SkillsSection.vue";
+import EducationSection from "../components/HomePage/EducationSection.vue";
+
 export default {
   name: "HomePage",
   components: {
     Sidebar,
     IntroductionSection,
     ExperienceSection,
-    SkillsSection
+    SkillsSection,
+    EducationSection,
   },
   data() {
     return {

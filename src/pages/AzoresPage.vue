@@ -1,12 +1,12 @@
 <template>
   <div id="azores-page">
-    test azores
+    To be continued
   </div>
 </template>
 
 <script>
   export default {
-    name: 'azores-page',
+    name: 'AzoresPage',
   }
 </script>
 

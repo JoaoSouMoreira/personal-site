@@ -64,7 +64,9 @@ export default {
         this.activeSection = entry.target.id;
         window.location.hash = entry.target.id;
       }
-      this.isLoaded = true;
+      if (isVisible) {
+        this.isLoaded = true;
+      }
     }
   },
 };

@@ -44,7 +44,7 @@ import SkillsSection from "../components/HomePage/SkillsSection.vue";
 import EducationSection from "../components/HomePage/EducationSection.vue";
 
 export default {
-  name: "HomePage",
+  name: 'HomePage',
   components: {
     Sidebar,
     IntroductionSection,
@@ -55,21 +55,18 @@ export default {
   data() {
     return {
       activeSection: window.location.hash || '',
+      isLoaded: false,
     };
   },
   methods: {
     visibilityChanged: function(isVisible, entry) {
-      // console.log(entry.target.id + ' ' + isVisible);
-      if (isVisible && !this.activeSection && entry.target.id === 'introduction') {
-        return;
-      }
-
-      if (isVisible) {
+      if (isVisible && this.isLoaded) {
         this.activeSection = entry.target.id;
         window.location.hash = entry.target.id;
       }
+      this.isLoaded = true;
     }
-  }
+  },
 };
 </script>
 

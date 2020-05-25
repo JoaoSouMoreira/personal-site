@@ -76,6 +76,11 @@ export default {
       sections: this.$router.currentRoute.meta.sections
     };
   },
+  mounted() {
+    window.addEventListener('hashchange', (event) => {
+      event.preventDefault();
+    })
+  },
   methods: {
     handleScroll: path => {
       document.getElementById(path).scrollIntoView({

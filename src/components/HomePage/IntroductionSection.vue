@@ -69,7 +69,7 @@
 
 <script>
 export default {
-  name: "IntroductionSection",
+  name: 'IntroductionSection',
   data() {
     return {
       age: this.getYears('1989-07-28'),
@@ -135,6 +135,11 @@ export default {
 
 .details {
   padding-left: 50px;
+  color: $color-primary;
+
+  h2 {
+    font-size: 32px;
+  }
 
   ul {
     padding-left: 0;
@@ -142,6 +147,7 @@ export default {
     li {
       list-style: none;
       margin-top: 10px;
+      font-size: 20px;
     }
   }
 }

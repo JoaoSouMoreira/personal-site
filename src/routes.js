@@ -27,7 +27,10 @@ export default new VueRouter({
       component: AzoresPage,
       name: 'Where I am from',
       meta: {
-        sections: [],
+        sections: [
+          { path: 'introduction', name: 'Introduction' },
+          { path: 'suggestions', name: 'Suggestions' },
+        ],
       },
     },
     {

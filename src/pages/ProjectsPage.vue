@@ -1,13 +1,24 @@
 <template>
-  <div id="projects-page">
-    To be continued
+  <div
+    id="projects-page"
+    class="projects-container"
+  >
+    <Sidebar />
+    <IntroductionSection />
   </div>
 </template>
 
 <script>
-  export default {
-    name: 'Projects',
-  }
+import Sidebar from "../components/Sidebar.vue";
+import IntroductionSection from "../components/ProjectsPage/IntroductionSection.vue";
+
+export default {
+  name: 'Projects',
+  components: {
+    Sidebar,
+    IntroductionSection,
+  },
+}
 </script>
 
 <style scoped></style>

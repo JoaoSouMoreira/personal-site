@@ -30,7 +30,9 @@ export default {
       template: 'src/index.html',
       fileName: 'index.html',
     }),
-    BabelPlugin(),
+    BabelPlugin({
+      babelHelpers: 'bundled',
+    }),
     eslint(),
     ResolvePlugin(),
     CopyPlugin({

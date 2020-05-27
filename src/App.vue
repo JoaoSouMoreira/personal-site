@@ -1,5 +1,6 @@
 <template>
   <div class="container">
+    <!-- <BackgroundCanvas /> -->
     <div class="menu-container">
       <ToolBar />
     </div>
@@ -11,16 +12,21 @@
 </template>
 
 <script>
-  import ToolBar from './components/ToolBar.vue';
-  import Footer from './components/Footer.vue';
+// import BackgroundCanvas from './components/BackgroundCanvas.vue';
+import ToolBar from './components/ToolBar.vue';
+import Footer from './components/Footer.vue';
 
-  export default {
-    name: 'App',
-    components: {
-      ToolBar,
-      Footer,
-    },
-  }
+export default {
+  name: 'App',
+  components: {
+    // BackgroundCanvas,
+    ToolBar,
+    Footer,
+  },
+  mounted() {
+
+  },
+}
 </script>
 
 <style lang="scss" scoped>

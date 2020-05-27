@@ -69,7 +69,7 @@
 export default {
   name: "Sidebar",
   props: {
-    activeSection: { type: String, required: true }
+    activeSection: { type: String, required: false, default: '' }
   },
   data() {
     return {

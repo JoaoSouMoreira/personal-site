@@ -55,6 +55,15 @@
       <li>Day suggestions (this list is not in a specific order, you should be flexible and take advantage of certain areas of the island with good weather according to the webcams - be particularly mindful of Fogo and Sete Cidades lagoons as they are frequently covered in fog and are very much worth it when the sky is clear!)</li>
     </ul>
     <h4>DAY 1: Ponta Delgada</h4>
+    <figure>
+      <img
+        src="/assets/images/azores/pontadelgada.jpg"
+        alt="Ponta Delgada"
+      >
+      <figcaption>
+        Photo taken from my phone (Oneplus 6)
+      </figcaption>
+    </figure>
     <ul>
       <li>Avenue (Walking along the avenue)</li>
       <li>Doors to the Sea (Portas do Mar) and quay (marina)</li>
@@ -108,6 +117,15 @@
       <li>Ferrarias Spa, a Thermal Spa with several pools - one of them is outdoor right next to the sea - jacuzzi, massages, Turkish bath... You can swim in the sea, but you should check the App for the best times of day temperature-wise</li>
     </ul>
     <h4>DAY 3: Ribeira Grande &amp; Lagoa do Fogo (If the day is too foggy, you are better off doing this in a different day)</h4>
+    <figure>
+      <img
+        src="/assets/images/azores/ribeiragrande.jpg"
+        alt="Ribeira Grande"
+      >
+      <figcaption>
+        Photo taken from my phone (Oneplus 6)
+      </figcaption>
+    </figure>
     <ul>
       <li>Serra da Barrosa Viewpoint, in the county of Vila Franca do Campo</li>
       <li>Go down to the Fire Lagoon (Lagoa do Fogo) 2 km up until the water itself on a trail that some consider challenging. It totals about 1 hour each way, but it is worth it</li>
@@ -132,6 +150,18 @@
       <li>Sāo Vicente Pools - excelent for a swim in a gorgeous day</li>
     </ul>
     <h4>DAY 4: Furnas</h4>
+    <figure>
+      <img
+        src="/assets/images/azores/furnas.jpg"
+        alt="Furnas"
+      >
+      <figcaption>
+        Photo by <a
+          href="https://www.instagram.com/mariadedeusousa/"
+          target="_blank"
+        >@mariadedeusousa</a>
+      </figcaption>
+    </figure>
     <ul>
       <li>Drive to the Ferro Mountain (Pico do Ferro) with views above the Furnas Lagoon</li>
       <li>Drive around the southern coast to Furnas lagoon and park near the fumeroles - 0,50€ fee - and walk the trail that goes around the lagoon, takes on average 2 to 2 and a half hours.</li>

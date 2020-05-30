@@ -3,6 +3,7 @@
     id="education"
     class="education-container"
   >
+    <h1>Education</h1>
     <div class="education-item">
       <h2>BSC Computer Engineering</h2>
       <h4>

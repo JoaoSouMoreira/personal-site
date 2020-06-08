@@ -18,12 +18,12 @@
     >
       Project on Github
     </a>
-    <!-- <img
+    <img
       src="/assets/images/projects/manywhoui.jpg"
       alt="ManyWho UI application"
-    > -->
+    >
     <p>This project was a rewrite of the existing ManyWho Flow UI back in 2014. It is the main Flow UI engine and serves to render Flow metadata as a Web UI.</p>
-    <p>It uses tools like React, Webpack and Flux.</p>
+    <p>It uses tools like React, Gulp and Flux.</p>
   </div>
 </template>
 

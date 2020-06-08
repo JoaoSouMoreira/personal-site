@@ -62,7 +62,13 @@ export default {
     visibilityChanged: function(isVisible, entry) {
       if (isVisible && this.isLoaded) {
         this.activeSection = entry.target.id;
-        window.location.hash = entry.target.id;
+
+        if(history.pushState) {
+          history.pushState(null, null, `#${entry.target.id}`);
+        }
+        else {
+          location.hash = entry.target.id;
+        }
       }
       if (isVisible) {
         this.isLoaded = true;

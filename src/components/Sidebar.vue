@@ -2,11 +2,11 @@
   <div class="sidebar-container">
     <ul class="menu">
       <li
-        v-for="section in sections"
+        v-for="(section, index) in sections"
         :key="section.name"
       >
         <a
-          :class="[activeSection === section.path ? 'section-link active' : 'section-link']"
+          :class="[activeSection === section.path || (!activeSection && index === 0) ? 'section-link active' : 'section-link']"
           @click="handleScroll(section.path)"
         >{{ section.name }}</a>
       </li>
@@ -78,8 +78,9 @@ export default {
   },
   mounted() {
     window.addEventListener('hashchange', (event) => {
+      event.stopPropagation();
       event.preventDefault();
-    })
+    });
   },
   methods: {
     handleScroll: path => {

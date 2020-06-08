@@ -37,7 +37,9 @@ export default {
     ResolvePlugin(),
     CopyPlugin({
       targets: [
-        { src: 'src/assets/images/**/*', dest: 'dist/assets/images' },
+        { src: 'src/assets/images/*', dest: 'dist/assets/images' },
+        { src: 'src/assets/images/projects/**/*', dest: 'dist/assets/images/projects' },
+        { src: 'src/assets/images/azores/**/*', dest: 'dist/assets/images/azores' },
         { src: 'src/assets/fonts/**/*', dest: 'dist/assets/fonts' },
         { src: 'src/assets/CV.pdf', dest: 'dist/assets' },
         { src: 'src/assets/favicon/**/*.png', dest: 'dist/assets/favicon' },

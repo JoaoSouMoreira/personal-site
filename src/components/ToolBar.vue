@@ -19,7 +19,7 @@
 
 <script>
 export default {
-  name: "ToolBar",
+  name: 'ToolBar',
   data() {
     return {
       routes: this.$router.options.routes.filter(route => route.name)

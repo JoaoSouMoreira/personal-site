@@ -8,6 +8,8 @@ import ResolvePlugin from '@rollup/plugin-node-resolve';
 import CopyPlugin from 'rollup-plugin-copy';
 import ReplacePlugin from '@rollup/plugin-replace';
 import SVGPlugin from 'rollup-plugin-vue-inline-svg';
+import SitemapPlugin from 'rollup-plugin-sitemap';
+import routes from '../src/routes';
 
 export default {
   input: 'src/index.js',
@@ -32,6 +34,7 @@ export default {
     }),
     BabelPlugin({
       babelHelpers: 'bundled',
+      exclude: 'node_modules/**',
     }),
     eslint(),
     ResolvePlugin(),
@@ -54,5 +57,10 @@ export default {
       'process.env.VUE_ENV': JSON.stringify('browser')
     }),
     SVGPlugin(),
+    SitemapPlugin({
+      baseUrl: 'https://joaosomoreira.com',
+      contentBase: 'dist',
+      routes,
+    }),
   ]
 }

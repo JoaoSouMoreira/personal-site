@@ -5,7 +5,7 @@
   >
     <h2>Introduction</h2>
     <img
-      src="/assets/images/azores.jpg"
+      src="/assets/images/azores/azores.jpg"
       alt="Azores Map"
     >
     <p>The Azores are a group of 9 islands around 1500km off the coast of Portugal going towards North America, with a total population of around 250,000 people.</p>

@@ -10,7 +10,9 @@ import ReplacePlugin from '@rollup/plugin-replace';
 import SVGPlugin from 'rollup-plugin-vue-inline-svg';
 import SitemapPlugin from 'rollup-plugin-sitemap';
 import routes from '../src/routes';
-import path from 'path';
+var fs = require('fs');
+var files = fs.readdirSync(process.cwd());
+console.log(files); //eslint-disable-line
 
 export default {
   input: 'src/index.js',

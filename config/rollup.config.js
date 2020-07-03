@@ -12,9 +12,6 @@ import SitemapPlugin from 'rollup-plugin-sitemap';
 import routes from '../src/routes';
 import path from 'path';
 
-console.log(path.dirname(require.main.filename)); //eslint-disable-line
-console.log(process.cwd()); //eslint-disable-line
-
 export default {
   input: 'src/index.js',
   output: {

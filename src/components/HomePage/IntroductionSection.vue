@@ -26,7 +26,7 @@
           </li>
           <li>
             <b>Location:</b>
-            Exeter, UK
+            Boston, MA
           </li>
         </ul>
       </div>
@@ -51,7 +51,7 @@
       Bloodborne, Sekiro: Shadows Die Twice, Warframe, Final Fantasy 8 and The Witcher 3 (I could go on...).
     </p>
     <p>
-      I am a Software Engineer with seven years of experience programming, designing and delivering
+      I am a Software Engineer with eight years of experience programming, designing and delivering
       reliable, scalable and tested applications, meeting both customer and business needs. I have worked
       in both direct to customer and B2B projects, and am familiar with working in teams of any size. I also
       have some leadership experience, as well as experience with collaborating, mentoring and providing

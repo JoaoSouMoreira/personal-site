@@ -94,6 +94,13 @@ import HTML5Icon from 'simple-icons/icons/html5.svg';
 import MySQLIcon from 'simple-icons/icons/mysql.svg';
 import JQueryIcon from 'simple-icons/icons/jquery.svg';
 import RollupIcon from 'simple-icons/icons/rollup-dot-js.svg';
+import PostgresIcon from 'simple-icons/icons/postgresql.svg';
+import JenkinsIcon from 'simple-icons/icons/jenkins.svg';
+import DjangoIcon from 'simple-icons/icons/django.svg';
+import SpringIcon from 'simple-icons/icons/spring.svg';
+import Auth0Icon from 'simple-icons/icons/auth0.svg';
+import JasmineIcon from 'simple-icons/icons/jasmine.svg';
+import GitIcon from 'simple-icons/icons/git.svg';
 
 export default {
   name: 'SkillsSection',
@@ -130,45 +137,58 @@ export default {
     GruntIcon,
     RollupIcon,
     ReduxIcon,
+    PostgresIcon,
+    JenkinsIcon,
+    DjangoIcon,
+    SpringIcon,
+    Auth0Icon,
+    JasmineIcon,
+    GitIcon
   },
   data() {
     return {
       languages: [
-        { name: 'Javascript', icon: 'JSIcon', meter: '80%' },
-        { name: 'Typescript', icon: 'TypescriptIcon', meter: '70%' },
+        { name: 'Javascript', icon: 'JSIcon', meter: '85%' },
+        { name: 'Typescript', icon: 'TypescriptIcon', meter: '80%' },
+        { name: 'Java', icon: 'JavaIcon', meter: '70%' },
+        { name: 'Python', icon: 'PythonIcon', meter: '50%' },
         { name: 'PHP', icon: 'PHPIcon', meter: '60%' },
         { name: 'HTML5', icon: 'HTML5Icon', meter: '80%' },
         { name: 'CSS3', icon: 'CSS3Icon', meter: '80%' },
         { name: 'SCSS', icon: 'SASSIcon', meter: '70%' },
-        { name: 'Go', icon: 'GoIcon', meter: '40%' },
-        { name: 'C#', icon: 'CSharpIcon', meter: '40%' },
-        { name: 'Java', icon: 'JavaIcon', meter: '30%' },
-        { name: 'Python', icon: 'PythonIcon', meter: '30%' },
+        { name: 'Go', icon: 'GoIcon', meter: '50%' },
+        { name: 'C#', icon: 'CSharpIcon', meter: '55%' },
         { name: 'GraphQL', icon: 'GraphQLIcon', meter: '70%' },
-        { name: 'MySQL', icon: 'MySQLIcon', meter: '30%' },
+        { name: 'MySQL', icon: 'MySQLIcon', meter: '50%' },
+        { name: 'PostgreSQL', icon: 'PostgresIcon', meter: '50%' },
       ],
       frameworks: [
         { name: 'React', icon: 'ReactIcon', meter: '90%' },
-        { name: 'Angular', icon: 'AngularIcon', meter: '80%' },
+        { name: 'Angular', icon: 'AngularIcon', meter: '85%' },
         { name: 'Vue', icon: 'VueIcon', meter: '60%' },
-        { name: 'Ionic', icon: 'IonicIcon', meter: '70%' },
+        { name: 'Spring', icon: 'SpringIcon', meter: '75%' },
+        { name: 'Ionic', icon: 'IonicIcon', meter: '75%' },
         { name: 'jQuery', icon: 'JQueryIcon', meter: '80%' },
         { name: 'Magento 2', icon: 'MagentoIcon', meter: '50%' },
         { name: 'Laravel', icon: 'LaravelIcon', meter: '40%' },
+        { name: 'Django', icon: 'DjangoIcon', meter: '50%' },
       ],
       tools: [
+        { name: 'Git', icon: 'GitIcon', meter: '95%' },
         { name: 'Redux', icon: 'ReduxIcon', meter: '90%' },
         { name: 'Flux', icon: '', meter: '90%' },
         { name: 'Alt.js', icon: '', meter: '90%' },
         { name: 'Jest', icon: 'JestIcon', meter: '80%' },
+        { name: 'Jenkins', icon: 'JestIcon', meter: '70%' },
         { name: 'Karma', icon: '', meter: '80%' },
-        { name: 'Jasmine', icon: '', meter: '80%' },
+        { name: 'Jasmine', icon: 'JasmineIcon', meter: '80%' },
         { name: 'Webpack', icon: 'WebpackIcon', meter: '90%' },
-        { name: 'Rollup', icon: 'RollupIcon', meter: '80%' },
+        { name: 'Rollup', icon: 'RollupIcon', meter: '85%' },
         { name: 'Gulp', icon: 'GulpIcon', meter: '80%' },
         { name: 'Grunt', icon: 'GruntIcon', meter: '70%' },
         { name: 'Serverless', icon: 'ServerlessIcon', meter: '70%' },
-        { name: 'AWS', icon: 'AWSIcon', meter: '50%' },
+        { name: 'AWS', icon: 'AWSIcon', meter: '60%' },
+        { name: 'Auth0', icon: 'Auth0Icon', meter: '80%' },
         { name: 'Apollo Client', icon: 'GraphQLIcon', meter: '70%' },
         { name: 'Material UI', icon: 'MaterialUIIcon', meter: '80%' },
         { name: 'Cordova', icon: 'CordovaIcon', meter: '50%' },

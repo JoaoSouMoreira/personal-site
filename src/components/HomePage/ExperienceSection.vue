@@ -7,12 +7,52 @@
     <div class="experience-item">
       <div class="experience-title">
         <div class="experience-title-text">
+          <h2>Software Engineer</h2>
+          <h4>
+            <a
+              href="https://currenthealth.com/"
+              target="_blank"
+            >Current Health</a> | August 2020 to Present
+          </h4>
+        </div>
+        <img
+          src="/assets/images/currenthealth.png"
+          alt="Current Health Logo"
+          width="100"
+        >
+      </div>
+      <p>Current Health is a company that focuses on delivering quality patient care at home. It provides a selection of devices for continuous vital monitoring and other features focused on patient care. It also provides a platform for HCPs to review patient data, perform a number of operations and be notified in cases of deterioration.</p>
+      <p>My role at Current Health is to focus on the planning, design, development and deployment of a variety of features and services to support at home patient care.</p>
+      <ul>
+        <li><JavaIcon class="icon" /></li>
+        <li><Typescript class="icon" /></li>
+        <li><JSIcon class="icon" /></li>
+        <li><PostgresIcon class="icon" /></li>
+        <li><PythonIcon class="icon" /></li>
+        <li><AngularIcon class="icon" /></li>
+        <li><ReduxIcon class="icon" /></li>
+        <li><WebpackIcon class="icon" /></li>
+        <li><JenkinsIcon class="icon" /></li>
+        <li><JestIcon class="icon" /></li>
+        <li><NodeIcon class="icon" /></li>
+        <li><DjangoIcon class="icon" /></li>
+        <li><IonicIcon class="icon" /></li>
+        <li><CordovaIcon class="icon" /></li>
+        <li><AWSIcon class="icon" /></li>
+        <li><TerraformIcon class="icon" /></li>
+        <li><MaterialUIIcon class="icon" /></li>
+        <li><SASSIcon class="icon" /></li>
+      </ul>
+    </div>
+    <div class="experience-item">
+      <div class="experience-title">
+        <div class="experience-title-text">
           <h2>Lead Front End Developer</h2>
           <h4>
             <a
               href="https://www.funeralguide.co.uk/"
               target="_blank"
-            >Funeral Guide</a> | January 2019 to Present
+            >Funeral Guide</a> | January 2019 to August 2020
           </h4>
         </div>
         <img
@@ -235,9 +275,13 @@ import GruntIcon from 'simple-icons/icons/grunt.svg';
 import MagentoIcon from 'simple-icons/icons/magento.svg';
 import LaravelIcon from 'simple-icons/icons/laravel.svg';
 import PythonIcon from 'simple-icons/icons/python.svg';
+import DjangoIcon from 'simple-icons/icons/django.svg';
 import CSharpIcon from 'simple-icons/icons/csharp.svg';
 import HTML5Icon from 'simple-icons/icons/html5.svg';
 import MySQLIcon from 'simple-icons/icons/mysql.svg';
+import PostgresIcon from 'simple-icons/icons/postgresql.svg';
+import TerraformIcon from 'simple-icons/icons/terraform.svg';
+import JenkinsIcon from 'simple-icons/icons/jenkins.svg';
 
 export default {
   name: "ExperienceSection",
@@ -272,6 +316,10 @@ export default {
     CSharpIcon,
     HTML5Icon,
     MySQLIcon,
+    PostgresIcon,
+    DjangoIcon,
+    TerraformIcon,
+    JenkinsIcon,
   },
   methods: {
     downloadCV: event => {

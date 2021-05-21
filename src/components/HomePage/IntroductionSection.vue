@@ -33,7 +33,8 @@
     </div>
     <p>
       Welcome to my website! As you can tell from above my name is Joao Moreira. I am native to the Azores
-      islands in Portugal, but am currently living in Exeter, United Kingdom. Outside of work I have a few
+      islands in Portugal, but am currently living in Boston, MA in the United States. I have lived in a few different places
+      by now, including Porto and Braga in Portugal, as well as Exeter in the UK. Outside of work I have a few
       hobbies such as Music, General Fitness, Video Games and Cooking primarily.
     </p>
     <p>

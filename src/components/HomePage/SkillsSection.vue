@@ -66,26 +66,25 @@ import JSIcon from 'simple-icons/icons/javascript.svg';
 import PHPIcon from 'simple-icons/icons/php.svg';
 import ReactIcon from 'simple-icons/icons/react.svg';
 import ReduxIcon from 'simple-icons/icons/redux.svg';
-import VueIcon from 'simple-icons/icons/vue-dot-js.svg';
+import VueIcon from 'simple-icons/icons/vuedotjs.svg';
 import GraphQLIcon from 'simple-icons/icons/graphql.svg';
 import JestIcon from 'simple-icons/icons/jest.svg';
-import NodeIcon from 'simple-icons/icons/node-dot-js.svg';
+import NodeIcon from 'simple-icons/icons/nodedotjs.svg';
 import GoIcon from 'simple-icons/icons/go.svg';
 import AWSIcon from 'simple-icons/icons/amazonaws.svg';
 import ServerlessIcon from 'simple-icons/icons/serverless.svg';
 import WebpackIcon from 'simple-icons/icons/webpack.svg';
-import MaterialUIIcon from 'simple-icons/icons/material-ui.svg';
+import MaterialUIIcon from 'simple-icons/icons/mui.svg';
 import SASSIcon from 'simple-icons/icons/sass.svg';
 import CSS3Icon from 'simple-icons/icons/css3.svg';
 import IonicIcon from 'simple-icons/icons/ionic.svg';
 import AngularIcon from 'simple-icons/icons/angular.svg';
 import CordovaIcon from 'simple-icons/icons/apachecordova.svg';
 import TypescriptIcon from 'simple-icons/icons/typescript.svg';
-import JavaIcon from 'simple-icons/icons/java.svg';
+import JavaIcon from 'simple-icons/icons/openjdk.svg';
 import ApacheIcon from 'simple-icons/icons/apache.svg';
 import NginxIcon from 'simple-icons/icons/nginx.svg';
 import GulpIcon from 'simple-icons/icons/gulp.svg';
-import GruntIcon from 'simple-icons/icons/grunt.svg';
 import MagentoIcon from 'simple-icons/icons/magento.svg';
 import LaravelIcon from 'simple-icons/icons/laravel.svg';
 import PythonIcon from 'simple-icons/icons/python.svg';
@@ -93,7 +92,7 @@ import CSharpIcon from 'simple-icons/icons/csharp.svg';
 import HTML5Icon from 'simple-icons/icons/html5.svg';
 import MySQLIcon from 'simple-icons/icons/mysql.svg';
 import JQueryIcon from 'simple-icons/icons/jquery.svg';
-import RollupIcon from 'simple-icons/icons/rollup-dot-js.svg';
+import RollupIcon from 'simple-icons/icons/rollupdotjs.svg';
 import PostgresIcon from 'simple-icons/icons/postgresql.svg';
 import JenkinsIcon from 'simple-icons/icons/jenkins.svg';
 import DjangoIcon from 'simple-icons/icons/django.svg';
@@ -101,6 +100,16 @@ import SpringIcon from 'simple-icons/icons/spring.svg';
 import Auth0Icon from 'simple-icons/icons/auth0.svg';
 import JasmineIcon from 'simple-icons/icons/jasmine.svg';
 import GitIcon from 'simple-icons/icons/git.svg';
+import KotlinIcon from 'simple-icons/icons/kotlin.svg';
+import FlaskIcon from 'simple-icons/icons/flask.svg';
+import PytestIcon from 'simple-icons/icons/pytest.svg';
+import CypressIcon from 'simple-icons/icons/cypress.svg';
+import BuildkiteIcon from 'simple-icons/icons/buildkite.svg';
+import HelmIcon from 'simple-icons/icons/helm.svg';
+import MicrosoftSQLServerIcon from 'simple-icons/icons/microsoftsqlserver.svg';
+import SnowflakeIcon from 'simple-icons/icons/snowflake.svg';
+import TerraformIcon from 'simple-icons/icons/terraform.svg';
+import DatadogIcon from 'simple-icons/icons/datadog.svg';
 
 export default {
   name: 'SkillsSection',
@@ -134,7 +143,6 @@ export default {
     ApacheIcon,
     NginxIcon,
     GulpIcon,
-    GruntIcon,
     RollupIcon,
     ReduxIcon,
     PostgresIcon,
@@ -143,53 +151,69 @@ export default {
     SpringIcon,
     Auth0Icon,
     JasmineIcon,
-    GitIcon
+    GitIcon,
+    KotlinIcon,
+    FlaskIcon,
+    PytestIcon,
+    CypressIcon,
+    BuildkiteIcon,
+    HelmIcon,
+    MicrosoftSQLServerIcon,
+    SnowflakeIcon,
+    TerraformIcon,
+    DatadogIcon,
   },
   data() {
     return {
       languages: [
         { name: 'Javascript', icon: 'JSIcon', meter: '85%' },
-        { name: 'Typescript', icon: 'TypescriptIcon', meter: '80%' },
-        { name: 'Java', icon: 'JavaIcon', meter: '70%' },
-        { name: 'Python', icon: 'PythonIcon', meter: '50%' },
+        { name: 'Typescript', icon: 'TypescriptIcon', meter: '85%' },
+        { name: 'Kotlin', icon: 'KotlinIcon', meter: '80%' },
+        { name: 'Java', icon: 'JavaIcon', meter: '80%' },
+        { name: 'Python', icon: 'PythonIcon', meter: '70%' },
         { name: 'PHP', icon: 'PHPIcon', meter: '60%' },
         { name: 'HTML5', icon: 'HTML5Icon', meter: '80%' },
         { name: 'CSS3', icon: 'CSS3Icon', meter: '80%' },
         { name: 'SCSS', icon: 'SASSIcon', meter: '70%' },
         { name: 'Go', icon: 'GoIcon', meter: '50%' },
         { name: 'C#', icon: 'CSharpIcon', meter: '55%' },
-        { name: 'GraphQL', icon: 'GraphQLIcon', meter: '70%' },
-        { name: 'MySQL', icon: 'MySQLIcon', meter: '50%' },
-        { name: 'PostgreSQL', icon: 'PostgresIcon', meter: '50%' },
+        { name: 'GraphQL', icon: 'GraphQLIcon', meter: '80%' },
+        { name: 'PostgreSQL', icon: 'PostgresIcon', meter: '80%' },
+        { name: 'MySQL', icon: 'MySQLIcon', meter: '70%' },
+        { name: 'SQL Server', icon: 'MicrosoftSQLServerIcon', meter: '60%' },
+        { name: 'Snowflake', icon: 'MicrosoftSQLServerIcon', meter: '60%' },
       ],
       frameworks: [
         { name: 'React', icon: 'ReactIcon', meter: '90%' },
         { name: 'Angular', icon: 'AngularIcon', meter: '85%' },
+        { name: 'Spring', icon: 'SpringIcon', meter: '80%' },
+        { name: 'Flask', icon: 'FlaskIcon', meter: '70%' },
         { name: 'Vue', icon: 'VueIcon', meter: '60%' },
-        { name: 'Spring', icon: 'SpringIcon', meter: '75%' },
         { name: 'Ionic', icon: 'IonicIcon', meter: '75%' },
         { name: 'jQuery', icon: 'JQueryIcon', meter: '80%' },
         { name: 'Magento 2', icon: 'MagentoIcon', meter: '50%' },
         { name: 'Laravel', icon: 'LaravelIcon', meter: '40%' },
-        { name: 'Django', icon: 'DjangoIcon', meter: '50%' },
+        { name: 'Django', icon: 'DjangoIcon', meter: '60%' },
       ],
       tools: [
         { name: 'Git', icon: 'GitIcon', meter: '95%' },
-        { name: 'Redux', icon: 'ReduxIcon', meter: '90%' },
-        { name: 'Flux', icon: '', meter: '90%' },
-        { name: 'Alt.js', icon: '', meter: '90%' },
-        { name: 'Jest', icon: 'JestIcon', meter: '80%' },
+        { name: 'AWS', icon: 'AWSIcon', meter: '70%' },
+        { name: 'Datadog', icon: 'DatadogIcon', meter: '70%' },
+        { name: 'Buildkite', icon: 'BuildkiteIcon', meter: '70%' },
+        { name: 'Terraform', icon: 'TerraformIcon', meter: '60%' },
+        { name: 'Apollo Client', icon: 'GraphQLIcon', meter: '80%' },
         { name: 'Jenkins', icon: 'JestIcon', meter: '70%' },
-        { name: 'Karma', icon: '', meter: '80%' },
-        { name: 'Jasmine', icon: 'JasmineIcon', meter: '80%' },
+        { name: 'Serverless', icon: 'ServerlessIcon', meter: '70%' },
+        { name: 'Helm', icon: 'HelmIcon', meter: '60%' },
+        { name: 'Redux', icon: 'ReduxIcon', meter: '90%' },
+        { name: 'Pytest', icon: 'PytestIcon', meter: '75%' },
+        { name: 'Cypress', icon: 'CypressIcon', meter: '70%' },
         { name: 'Webpack', icon: 'WebpackIcon', meter: '90%' },
         { name: 'Rollup', icon: 'RollupIcon', meter: '85%' },
         { name: 'Gulp', icon: 'GulpIcon', meter: '80%' },
-        { name: 'Grunt', icon: 'GruntIcon', meter: '70%' },
-        { name: 'Serverless', icon: 'ServerlessIcon', meter: '70%' },
-        { name: 'AWS', icon: 'AWSIcon', meter: '60%' },
+        { name: 'Jest', icon: 'JestIcon', meter: '80%' },
+        { name: 'Jasmine', icon: 'JasmineIcon', meter: '80%' },
         { name: 'Auth0', icon: 'Auth0Icon', meter: '80%' },
-        { name: 'Apollo Client', icon: 'GraphQLIcon', meter: '70%' },
         { name: 'Material UI', icon: 'MaterialUIIcon', meter: '80%' },
         { name: 'Cordova', icon: 'CordovaIcon', meter: '50%' },
       ],

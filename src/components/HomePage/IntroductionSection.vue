@@ -35,7 +35,7 @@
       Welcome to my website! As you can tell from above my name is Joao Moreira. I am native to the Azores
       islands in Portugal, but am currently living in Boston, MA in the United States. I have lived in a few different places
       by now, including Porto and Braga in Portugal, as well as Exeter in the UK. Outside of work I have a few
-      hobbies such as Music, General Fitness, Video Games and Cooking primarily.
+      hobbies such as Music, Running, Fitness, Video Games and Cooking.
     </p>
     <p>
       Since I was a young child, as most people I always enjoyed listening to music. However when I was around
@@ -52,10 +52,10 @@
       Bloodborne, Sekiro: Shadows Die Twice, Warframe, Final Fantasy 8 and The Witcher 3 (I could go on...).
     </p>
     <p>
-      I am a Software Engineer with eight years of experience programming, designing and delivering
+      I am a Software Engineer with more than nine years of experience programming, designing and delivering
       reliable, scalable and tested applications, meeting both customer and business needs. I have worked
       in both direct to customer and B2B projects, and am familiar with working in teams of any size. I also
-      have some leadership experience, as well as experience with collaborating, mentoring and providing
+      have leadership experience, as well as experience with collaborating, mentoring and providing
       direction to colleagues.
     </p>
     <a

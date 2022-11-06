@@ -53,7 +53,7 @@
 </template>
 
 <script>
-import JavaIcon from 'simple-icons/icons/java.svg';
+import JavaIcon from 'simple-icons/icons/openjdk.svg';
 import JSIcon from 'simple-icons/icons/javascript.svg';
 import PHPIcon from 'simple-icons/icons/php.svg';
 import CIcon from 'simple-icons/icons/c.svg';

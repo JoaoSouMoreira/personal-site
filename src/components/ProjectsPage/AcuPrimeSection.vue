@@ -42,4 +42,14 @@ export default {
     width: 500px;
   }
 }
+
+@media (max-width: 560px) {
+
+  .acuprime-container {
+
+    img {
+      width: 100%;
+    }
+  }
+}
 </style>

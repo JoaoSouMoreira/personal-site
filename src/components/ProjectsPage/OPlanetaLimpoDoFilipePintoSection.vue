@@ -12,8 +12,6 @@
       </a>
     </h3>
     <iframe
-      width="560"
-      height="315"
       src="https://www.youtube-nocookie.com/embed/snp-MDRpgzw"
       frameborder="0"
       allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
@@ -43,6 +41,21 @@ export default {
 
   a {
     color: $color-primary;
+  }
+  .video {
+    width: 560px;
+    height: 315px;
+  }
+}
+
+@media (max-width: 560px) {
+
+  .oplanetalimpodofilipepinto-container {
+
+    .video {
+      width: 100%;
+      height: 100%;
+    }
   }
 }
 </style>

@@ -1,28 +1,56 @@
 <template>
-  <div id="experience" class="experience-container" @click="test">
+  <div
+    id="experience"
+    class="experience-container"
+    @click="test"
+  >
     <h1>Experience</h1>
-    <div v-for="item in experienceList" :key="item.company" class="experience-item">
+    <div
+      v-for="item in experienceList"
+      :key="item.company"
+      class="experience-item"
+    >
       <div class="experience-title">
         <div class="experience-title-text">
           <h2>{{ item.role }}</h2>
           <h4>
-            <a :href="item.companyUrl" target="_blank">{{ item.company }}</a> | {{ item.dateRange }}
+            <a
+              :href="item.companyUrl"
+              target="_blank"
+            >{{ item.company }}</a> | {{ item.dateRange }}
           </h4>
         </div>
-        <img :src="item.companyLogo" :alt="`${item.company} Logo`" :width="item.logoSize"
-          :style="item.logoHasLightBackground ? `background-color: #efefef;` : null">
+        <img 
+          :src="item.companyLogo" 
+          :alt="`${item.company} Logo`" 
+          :width="item.logoSize"
+          :style="item.logoHasLightBackground ? `background-color: #efefef;` : null"
+        >
       </div>
-      <p v-for="(text, index) in item.roleText" :key="index">
+      <p 
+        v-for="(text, index) in item.roleText"
+        :key="index"
+      >
         {{ text }}
       </p>
       <ul>
-        <li v-for="(icon, index) in item.icons" :key="index">
-          <component :is="icon" class="icon" />
+        <li
+          v-for="(icon, index) in item.icons"
+          :key="index"
+        >
+          <component
+            :is="icon"
+            class="icon"
+          />
         </li>
       </ul>
     </div>
     <div class="download-cv-container">
-      <a href class="download-cv-button" @click="downloadCV">
+      <a
+        href
+        class="download-cv-button"
+        @click="downloadCV"
+      >
         Download CV
       </a>
     </div>
@@ -122,15 +150,28 @@ export default {
     return {
       experienceList: [
         {
-          role: "Senior Software Engineer - Tech Lead",
+          role: "Staff Engineer L4",
           company: "Curative",
           companyUrl: "https://curative.com",
-          dateRange: "January 2021 to Present",
+          dateRange: "March 2023 to Present",
           companyLogo: "/assets/images/curative.svg",
           logoSize: "60",
           roleText: [
-            "I am the technical lead of one of the main Product Development teams of the Curative Health Plan project. My team is made up of Full Stack engineers that are able to work in all parts of the platform, including some infrastructure work.",
+            "I was promoted to the newly created role of Staff Engineer at Curative",
             "My role as a technical lead includes providing technical direction for the team, supporting and mentoring the team members, helping the team's Engineering Manager in creating the work processes, planning the upcoming work and more."
+          ],
+          icons: [KotlinIcon, TypescriptIcon, PythonIcon, GraphQLIcon, ReactIcon, PostgresIcon, MicrosoftSQLServerIcon, SnowflakeIcon, GradleIcon, ReduxIcon, CypressIcon, BuildkiteIcon, AWSIcon, TerraformIcon, HelmIcon, Auth0Icon]
+        },
+        {
+          role: "Senior Software Engineer L3 - Tech Lead",
+          company: "Curative",
+          companyUrl: "https://curative.com",
+          dateRange: "January 2022 to March 2023",
+          companyLogo: "/assets/images/curative.svg",
+          logoSize: "60",
+          roleText: [
+            "I was the technical lead of one of the Product Development teams of the Curative Health Plan project. My team is made up of Full Stack engineers that are able to work in all parts of the platform, including infrastructure work.",
+            "My role as a technical lead includes providing technical direction for the team, supporting and mentoring the team members, helping the team's Engineering Manager in creating the work processes, planning the upcoming work, handling external stakeholders, and more."
           ],
           icons: [KotlinIcon, TypescriptIcon, PythonIcon, GraphQLIcon, ReactIcon, PostgresIcon, MicrosoftSQLServerIcon, SnowflakeIcon, GradleIcon, ReduxIcon, CypressIcon, BuildkiteIcon, AWSIcon, TerraformIcon, HelmIcon, Auth0Icon]
         },
@@ -138,7 +179,7 @@ export default {
           role: "Software Engineer",
           company: "Current Health",
           companyUrl: "https://www.funeralguide.co.uk/",
-          dateRange: "January 2019 to August 2020",
+          dateRange: "August 2020 to January 2022",
           companyLogo: "/assets/images/funeralguide.png",
           logoSize: "100",
           roleText: [
@@ -152,7 +193,7 @@ export default {
           role: "Lead Front-End Developer",
           company: "Funeral Guide",
           companyUrl: "https://currenthealth.com/",
-          dateRange: "August 2020 to December 2021",
+          dateRange: "January 2019 to July 2020",
           companyLogo: "/assets/images/currenthealth.png",
           logoSize: "50",
           roleText: [

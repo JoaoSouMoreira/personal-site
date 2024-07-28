@@ -6,7 +6,24 @@
     <h2>Suggestions</h2>
     <p>I definitely recommend visiting the Azores, it is one of those places that is still very much untouched by mass tourism. Ideal for any kind of group or family.</p>
     <p>Below are some suggestions on what to do and eat there. I found it easier to group the days geographically to prevent needless driving as much as possible and make the most of your time there.</p>
-    3 essential Apps:
+    Here are some frequently updated Google Maps lists from some of the islands for viewing, there is definitely some overlap between these and the suggestions below:
+    <ul>
+      <li>
+        <a
+          href="https://maps.app.goo.gl/3Kff2verCu5iJC36A"
+          target="_blank"
+        >São Miguel</a>
+      </li>
+      <li>
+        <a
+          href="https://maps.app.goo.gl/sJ3DdDaNh3v7PHNHA"
+          target="_blank"
+        >Santa Maria</a>
+      </li>
+    </ul>
+    <p>
+      Here are also 3 essential Apps for anyone visiting:
+    </p>
     <ul>
       <li>
         <a

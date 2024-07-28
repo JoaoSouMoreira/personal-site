@@ -4,7 +4,7 @@
     class="skills-container"
   >
     <h1>Skills</h1>
-    <h2>Languages</h2>
+    <h2>Programming Languages</h2>
     <ul>
       <li
         v-for="language in languages"

@@ -1,56 +1,28 @@
 <template>
-  <div
-    id="experience"
-    class="experience-container"
-    @click="test"
-  >
+  <div id="experience" class="experience-container" @click="test">
     <h1>Experience</h1>
-    <div
-      v-for="item in experienceList"
-      :key="item.company"
-      class="experience-item"
-    >
+    <div v-for="item in experienceList" :key="item.company" class="experience-item">
       <div class="experience-title">
         <div class="experience-title-text">
           <h2>{{ item.role }}</h2>
           <h4>
-            <a
-              :href="item.companyUrl"
-              target="_blank"
-            >{{ item.company }}</a> | {{ item.dateRange }}
+            <a :href="item.companyUrl" target="_blank">{{ item.company }}</a> | {{ item.dateRange }}
           </h4>
         </div>
-        <img 
-          :src="item.companyLogo" 
-          :alt="`${item.company} Logo`" 
-          :width="item.logoSize"
-          :style="item.logoHasLightBackground ? `background-color: #efefef;` : null"
-        >
+        <img :src="item.companyLogo" :alt="`${item.company} Logo`" :width="item.logoSize"
+          :style="item.logoHasLightBackground ? `background-color: #efefef;` : null">
       </div>
-      <p 
-        v-for="(text, index) in item.roleText"
-        :key="index"
-      >
+      <p v-for="(text, index) in item.roleText" :key="index">
         {{ text }}
       </p>
       <ul>
-        <li
-          v-for="(icon, index) in item.icons"
-          :key="index"
-        >
-          <component
-            :is="icon"
-            class="icon"
-          />
+        <li v-for="(icon, index) in item.icons" :key="index">
+          <component :is="icon" class="icon" />
         </li>
       </ul>
     </div>
     <div class="download-cv-container">
-      <a
-        href
-        class="download-cv-button"
-        @click="downloadCV"
-      >
+      <a href class="download-cv-button" @click="downloadCV">
         Download CV
       </a>
     </div>
@@ -178,10 +150,10 @@ export default {
         {
           role: "Software Engineer",
           company: "Current Health",
-          companyUrl: "https://www.funeralguide.co.uk/",
+          companyUrl: "https://currenthealth.com/",
           dateRange: "August 2020 to January 2022",
-          companyLogo: "/assets/images/funeralguide.png",
-          logoSize: "100",
+          companyLogo: "/assets/images/currenthealth.png",
+          logoSize: "50",
           roleText: [
             "Current Health is a company that focuses on delivering quality patient care at home. It provides a selection of devices for continuous vital monitoring and other features focused on patient care. It also provides a platform for HCPs to review patient data, perform a number of operations and be notified in cases of deterioration.",
             "My role at Current Health was primarily to focus on the planning, design, development and deployment of a variety of features and services to support at home patient care. Along with that, I worked alongside leadership to start up three separate Product Development teams, including hiring, process definition, planning and other duties until an Engineering Manager was hired for the team.",
@@ -192,10 +164,10 @@ export default {
         {
           role: "Lead Front-End Developer",
           company: "Funeral Guide",
-          companyUrl: "https://currenthealth.com/",
+          companyUrl: "https://www.funeralguide.co.uk/",
           dateRange: "January 2019 to July 2020",
-          companyLogo: "/assets/images/currenthealth.png",
-          logoSize: "50",
+          companyLogo: "/assets/images/funeralguide.png",
+          logoSize: "100",
           roleText: [
             "Lead the Front-End development team (between 3 to 7 people at different points in time) for the Arranger product, a web application built using a React, Redux and GraphQL stack. Also responsible for the building and integration process of the Arranger Front-End using AWS services.",
             "Perform 1-to-1s, conflict resolution, technical mentorship and definition of objectives to all Front-End team members. Provide technical and domain direction for the whole Arranger development team, occasionally performing Scrum Master duties.",

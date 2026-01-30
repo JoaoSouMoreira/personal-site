@@ -125,12 +125,12 @@ export default {
           role: "Staff Engineer L4",
           company: "Curative",
           companyUrl: "https://curative.com",
-          dateRange: "March 2023 to Present",
+          dateRange: "March 2023 to January 2026",
           companyLogo: "/assets/images/curative.svg",
           logoSize: "60",
           roleText: [
             "I was promoted to the newly created role of Staff Engineer at Curative",
-            "My role as a technical lead includes providing technical direction for the team, supporting and mentoring the team members, helping the team's Engineering Manager in creating the work processes, planning the upcoming work and more."
+            "My role as a technical lead includesd providing technical direction for the team, supporting and mentoring the team members, helping the team's Engineering Manager in creating the work processes, planning the upcoming work and more."
           ],
           icons: [KotlinIcon, TypescriptIcon, PythonIcon, GraphQLIcon, ReactIcon, PostgresIcon, MicrosoftSQLServerIcon, SnowflakeIcon, GradleIcon, ReduxIcon, CypressIcon, BuildkiteIcon, AWSIcon, TerraformIcon, HelmIcon, Auth0Icon]
         },

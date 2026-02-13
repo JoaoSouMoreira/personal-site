@@ -29,7 +29,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../../scss/variables.scss';
+@use '../../scss/variables.scss';
 
 .weddingsite-container {
   width: 100%;
@@ -38,7 +38,7 @@ export default {
   margin-bottom: 50px;
 
   a {
-    color: $color-primary;
+    color: variables.$color-primary;
 
     &.subtitle {
       margin-bottom: 20px;

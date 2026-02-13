@@ -34,3 +34,6 @@ jsconfig.json
 /.vscode
 package-lock.json
 \.idea/
+
+# Yarn
+.yarn

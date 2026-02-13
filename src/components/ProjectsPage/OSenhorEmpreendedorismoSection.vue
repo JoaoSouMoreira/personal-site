@@ -31,7 +31,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../../scss/variables.scss';
+@use '../../scss/variables.scss';
 
 .osenhorempreendedorismo-container {
   width: 100%;
@@ -40,7 +40,7 @@ export default {
   margin-bottom: 50px;
 
   a {
-    color: $color-primary;
+    color: variables.$color-primary;
   }
 
   .video {

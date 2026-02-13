@@ -1,12 +1,7 @@
-import HomePage from './pages/HomePage.vue';
-import ProjectsPage from './pages/ProjectsPage.vue';
-import AzoresPage from './pages/AzoresPage.vue';
-
-export const routes = [
+export const siteMapRoutes = [
   {
     path: '/',
     name: 'Home',
-    component: HomePage,
     meta: {
       sections: [
         { path: 'introduction', name: 'Introduction' },
@@ -19,7 +14,6 @@ export const routes = [
   {
     path: '/azores',
     name: 'Where I am from',
-    component: AzoresPage,
     meta: {
       sections: [
         { path: 'introduction', name: 'Introduction' },
@@ -30,7 +24,6 @@ export const routes = [
   {
     path: '/projects',
     name: 'Projects',
-    component: ProjectsPage,
     meta: {
       sections: [],
     },
@@ -39,4 +32,4 @@ export const routes = [
     path: '/home',
     redirect: '/',
   },
-];
+]

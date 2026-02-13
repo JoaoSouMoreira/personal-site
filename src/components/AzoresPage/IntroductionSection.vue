@@ -61,7 +61,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../../scss/variables.scss';
+@use '../../scss/variables.scss';
 
 .introduction-container {
   width: 100%;
@@ -71,7 +71,7 @@ export default {
   }
 
   a {
-    color: $color-primary;
+    color: variables.$color-primary;
   }
 }
 </style>

@@ -223,7 +223,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../../scss/variables.scss';
+@use '../../scss/variables.scss';
 
 .skills-container {
   margin-bottom: 80px;
@@ -281,10 +281,10 @@ export default {
     border-bottom-right-radius: 8px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
-    background-color: $color-primary;
+    background-color: variables.$color-primary;
     background-image: linear-gradient(
       center bottom,
-      $color-primary 37%,
+      variables.$color-primary 37%,
       rgb(84,240,84) 69%
     );
     box-shadow:
@@ -298,6 +298,6 @@ export default {
 .icon {
   width: 20px;
   height: 20px;
-  fill: $color-primary;
+  fill: variables.$color-primary;
 }
 </style>

@@ -1,13 +1,9 @@
-import Vue from 'vue';
-import VueObserveVisibility from 'vue-observe-visibility';
+import { createApp } from 'vue'
+import { ObserveVisibility } from 'vue3-observe-visibility';
 import App from './App.vue';
-import router from './router';
+import { router } from './router';
 
-Vue.config.productionTip = false;
-
-Vue.use(VueObserveVisibility);
-
-new Vue({
-  router,
-  render: h => h(App),
-}).$mount('#app');
+const app = createApp(App);
+app.directive('observe-visibility', ObserveVisibility);
+app.use(router);
+app.mount('#app');

@@ -82,7 +82,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../../scss/variables.scss';
+@use '../../scss/variables.scss';
 
 .education-container {
   margin-bottom: 80px;
@@ -92,7 +92,7 @@ export default {
   margin-bottom: 50px;
 
   a {
-    color: $color-primary;
+    color: variables.$color-primary;
   }
 
   ul {
@@ -109,7 +109,7 @@ export default {
   .icon {
     width: 30px;
     height: 30px;
-    fill: $color-primary;
+    fill: variables.$color-primary;
   }
 }
 </style>

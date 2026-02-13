@@ -31,11 +31,12 @@
         </ul>
       </div>
     </div>
+    <h3>Engineering Leader & Systems Architect</h3>
     <p>
-      Welcome to my website! As you can tell from above my name is Joao Moreira. I am native to the Azores
-      islands in Portugal, but am currently living in Boston, MA in the United States. I have lived in a few different places
-      by now, including Porto and Braga in Portugal, as well as Exeter in the UK. Outside of work I have a few
-      hobbies such as Music, Running, Fitness, Video Games and Cooking.
+      I am João Moreira, an engineering leader originally from the Azores, Portugal, now based in Boston. With over 12 years of experience building mission-critical systems, I specialize in the intersection of technical strategy and organizational growth.
+    </p>
+    <p>
+      My career has been defined by a "full-stack" mindset—not just in code, but in how I approach problems. Whether I'm architecting high-availability Authentication and Authorization layers in healthcare or mentoring a team of engineers to their next promotion, my goal is always the same: building for scale and reliability.
     </p>
     <p>
       Since I was a young child, as most people I always enjoyed listening to music. However when I was around
@@ -88,7 +89,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../../scss/variables.scss';
+@use '../../scss/variables.scss';
 
 .introduction-container {
   display: flex;
@@ -106,7 +107,7 @@ export default {
     margin: 10px auto;
 
     a {
-      color: $color-primary;
+      color: variables.$color-primary;
     }
   }
 }
@@ -136,7 +137,7 @@ export default {
 
 .details {
   padding-left: 50px;
-  color: $color-primary;
+  color: variables.$color-primary;
 
   h2 {
     font-size: 32px;
@@ -157,15 +158,15 @@ export default {
   width: 200px;
   margin: 30px auto;
   padding: 10px 3px;
-  background-color: $color-primary;
-  border: 1px solid $color-primary-shade;
+  background-color: variables.$color-primary;
+  border: 1px solid variables.$color-primary-shade;
   border-radius: 5px;
   text-align: center;
   text-decoration: none;
-  color: $font-primary;
+  color: variables.$font-primary;
 
   &:focus, &:hover {
-    background-color: $color-primary-shade;
+    background-color: variables.$color-primary-shade;
   }
 }
 </style>

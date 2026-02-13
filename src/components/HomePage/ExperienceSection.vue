@@ -252,7 +252,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../../scss/variables.scss';
+@use '../../scss/variables.scss';
 
 .experience-container {
   margin-bottom: 80px;
@@ -271,7 +271,7 @@ export default {
   }
 
   a {
-    color: $color-primary;
+    color: variables.$color-primary;
   }
 
   ul {
@@ -290,7 +290,7 @@ export default {
 .icon {
   width: 30px;
   height: 30px;
-  fill: $color-primary;
+  fill: variables.$color-primary;
 }
 
 .download-cv-container {
@@ -299,16 +299,16 @@ export default {
   .download-cv-button {
     margin: 30px auto;
     padding: 10px;
-    background-color: $color-primary;
-    border: 1px solid $color-primary-shade;
+    background-color: variables.$color-primary;
+    border: 1px solid variables.$color-primary-shade;
     border-radius: 5px;
     text-align: center;
     text-decoration: none;
-    color: $font-primary;
+    color: variables.$font-primary;
 
     &:focus,
     &:hover {
-      background-color: $color-primary-shade;
+      background-color: variables.$color-primary-shade;
     }
   }
 }

@@ -1,44 +1,80 @@
-import ServePlugin from 'rollup-plugin-serve';
-import LiveReloadPlugin from 'rollup-plugin-livereload';
-import BabelPlugin from '@rollup/plugin-babel';
-import VuePlugin from 'rollup-plugin-vue';
-import HtmlPlugin from 'rollup-plugin-html2';
-import { eslint } from "rollup-plugin-eslint";
-import ResolvePlugin from '@rollup/plugin-node-resolve';
-import CopyPlugin from 'rollup-plugin-copy';
-import ReplacePlugin from '@rollup/plugin-replace';
-import SVGPlugin from 'rollup-plugin-vue-inline-svg';
-import SitemapPlugin from 'rollup-plugin-sitemap';
-import routes from '../src/routes';
+import vue from 'unplugin-vue/rollup';
+import resolve from '@rollup/plugin-node-resolve';
+import replace from '@rollup/plugin-replace';
+import babel from '@rollup/plugin-babel';
+import html from 'rollup-plugin-html2';
+import serve from 'rollup-plugin-serve';
+import livereload from 'rollup-plugin-livereload';
+import copy from 'rollup-plugin-copy';
+import commonjs from '@rollup/plugin-commonjs';
+import postcss from 'rollup-plugin-postcss';
+import sitemap from 'rollup-plugin-sitemap';
+import { siteMapRoutes } from '../src/sitemapRoutes';
+import { createRequire } from 'module';
+
+const require = createRequire(import.meta.url);
+const compiler = require('@vue/compiler-sfc');
 
 export default {
   input: 'src/index.js',
   output: {
     file: 'dist/bundle.js',
     format: 'iife',
-    name: 'bundle',
     sourcemap: true,
   },
   plugins: [
-    process.env.ROLLUP_WATCH ? ServePlugin({
-      contentBase: 'dist',
-      historyApiFallback: '/index.html',
-    }) : null,
-    process.env.ROLLUP_WATCH ? LiveReloadPlugin('dist') : null,
-    VuePlugin({
-      needMap: false,
+    // Replace env vars
+    replace({
+      'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV || 'development'),
+      'process.env.VUE_ENV': JSON.stringify('browser'),
+      preventAssignment: true,
     }),
-    HtmlPlugin({
+    // Resolve external modules
+    resolve({
+      extensions: ['.js', '.jsx', '.ts', '.tsx', '.vue'],
+      browser: true,
+    }),
+    // Handle Vue 3 SFCs
+    vue({
+      compiler,
+      template: {
+        transformAssetUrls: false,
+      },
+    }),
+    // Handle SVGs
+    {
+      name: 'svg-loader',
+      transform(code, id) {
+        if (!id.endsWith('.svg')) return null;
+        const { code: renderCode } = compiler.compileTemplate({
+          id,
+          source: code,
+          filename: id,
+          transformAssetUrls: false,
+        });
+        return `${renderCode}; export default { render: render }`;
+      }
+    },
+    // Convert CommonJS modules to ES6
+    commonjs({
+      include: [/node_modules/, /\.yarn/],
+      extensions: ['.js', '.cjs'],
+    }),
+    // Handle SCSS/CSS
+    postcss(),
+    // Transpile to ES5
+    babel({
+      babelHelpers: 'bundled',
+      exclude: 'node_modules/**',
+      extensions: ['.js', '.jsx', '.es6', '.es', '.mjs', '.vue'],
+    }),
+    // Generate HTML
+    html({
       template: 'src/index.html',
       fileName: 'index.html',
     }),
-    BabelPlugin({
-      babelHelpers: 'bundled',
-      exclude: 'node_modules/**',
-    }),
-    eslint(),
-    ResolvePlugin(),
-    CopyPlugin({
+    // Copy static assets
+    copy({
       targets: [
         { src: 'src/assets/images/*', dest: 'dist/assets/images' },
         { src: 'src/assets/images/projects/**/*', dest: 'dist/assets/images/projects' },
@@ -52,15 +88,16 @@ export default {
         { src: '_redirects', dest: 'dist' },
       ]
     }),
-    ReplacePlugin({
-      'process.env.NODE_ENV': JSON.stringify('development'),
-      'process.env.VUE_ENV': JSON.stringify('browser')
+    // Dev server configuration
+    process.env.ROLLUP_WATCH && serve({
+      contentBase: 'dist',
+      historyApiFallback: '/index.html',
     }),
-    SVGPlugin(),
-    SitemapPlugin({
+    process.env.ROLLUP_WATCH && livereload('dist'),
+    sitemap({
       baseUrl: 'https://joaosomoreira.com',
       contentBase: 'dist',
-      routes,
+      routes: siteMapRoutes,
     }),
   ]
 }

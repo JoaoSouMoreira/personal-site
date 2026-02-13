@@ -29,7 +29,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "../scss/variables.scss";
+@use "../scss/variables.scss";
 
 .toolbar-container {
   display: grid;
@@ -48,20 +48,20 @@ export default {
 
       .menu-link {
         display: block;
-        color: $color-lighter;
+        color: variables.$color-lighter;
         text-decoration: none;
         padding: 1em 2em;
-        border-bottom: 2px solid $color-lighter;
+        border-bottom: 2px solid variables.$color-lighter;
 
         &:not(.active):hover {
-          color: $color-light;
-          border-bottom: 2px solid $color-light;
+          color: variables.$color-light;
+          border-bottom: 2px solid variables.$color-light;
         }
       }
 
       .active {
-        color: $color-primary;
-        border-bottom: 4px solid $color-primary;
+        color: variables.$color-primary;
+        border-bottom: 4px solid variables.$color-primary;
       }
     }
   }
@@ -79,16 +79,16 @@ export default {
         margin: 0;
 
         .menu-link {
-          background-color: $color-lighter;
-          border: 1px solid $color-lighter;
-          color: $color-dark;
+          background-color: variables.$color-lighter;
+          border: 1px solid variables.$color-lighter;
+          color: variables.$color-dark;
           margin: 0;
         }
 
         .active {
-          background-color: $color-primary;
-          border: 1px solid $color-primary;
-          color: $color-light;
+          background-color: variables.$color-primary;
+          border: 1px solid variables.$color-primary;
+          color: variables.$color-light;
         }
       }
     }

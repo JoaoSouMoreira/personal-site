@@ -73,7 +73,7 @@ export default {
   },
   data() {
     return {
-      sections: this.$router.currentRoute.meta.sections
+      sections: this.$router.currentRoute.value.meta.sections
     };
   },
   mounted() {
@@ -97,7 +97,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../scss/variables.scss';
+@use '../scss/variables.scss';
 
 .sidebar-container {
   position: fixed;
@@ -138,9 +138,9 @@ export default {
       margin: 8px auto;
       padding: 0;
       line-height: 40px;
-      background-color: $color-primary;
+      background-color: variables.$color-primary;
       text-decoration: none;
-      color: $font-primary;
+      color: variables.$font-primary;
       font-size: 20px;
       font-weight: bold;
       border-radius: 5px;
@@ -162,13 +162,13 @@ export default {
       display: block;
       padding: 1em;
       text-decoration: none;
-      background-color: $color-dark;
-      color: $font-primary;
+      background-color: variables.$color-dark;
+      color: variables.$font-primary;
     }
 
     .active {
-      background-color: $color-primary;
-      color: $font-primary;
+      background-color: variables.$color-primary;
+      color: variables.$font-primary;
     }
   }
 }

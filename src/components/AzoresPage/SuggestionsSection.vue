@@ -286,13 +286,13 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../../scss/variables.scss';
+@use '../../scss/variables.scss';
 
 .suggestions-container {
   width: 100%;
 
   a {
-    color: $color-primary;
+    color: variables.$color-primary;
   }
 
   figure {
@@ -301,7 +301,7 @@ export default {
     figcaption {
       font-size: 10px;
       text-align: right;
-      color: $color-light;
+      color: variables.$color-light;
     }
   }
 }

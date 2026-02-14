@@ -21,10 +21,6 @@
             Joao Moreira
           </li>
           <li>
-            <b>Age:</b>
-            {{ age }}
-          </li>
-          <li>
             <b>Location:</b>
             Boston, MA
           </li>
@@ -36,29 +32,29 @@
       I am João Moreira, an engineering leader originally from the Azores, Portugal, now based in Boston. With over 12 years of experience building mission-critical systems, I specialize in the intersection of technical strategy and organizational growth.
     </p>
     <p>
-      My career has been defined by a "full-stack" mindset—not just in code, but in how I approach problems. Whether I'm architecting high-availability Authentication and Authorization layers in healthcare or mentoring a team of engineers to their next promotion, my goal is always the same: building for scale and reliability.
+      My career has been defined by a "full-stack" mindset—not just in code, but in how I approach problems. Whether I'm architecting high-availability Authentication and Authorization layers in healthcare or mentoring a team of engineers to their next promotion, my goal is always the same: <b>building for scale and reliability</b>.
     </p>
+    <h3>Beyond the Code</h3>
     <p>
-      Since I was a young child, as most people I always enjoyed listening to music. However when I was around
-      20 years old I decided to try to become a DJ. It was a lot of fun and managed to actually play in a number
-      of different venues. I also tried my hand at audio mixing and mastering by remixing some songs and making
-      edited mixtapes. If you're curious about it you can <a
-        href="https://soundcloud.com/disco4dummies"
-        target="_blank"
-      >head here</a>.
+      While I spend my days solving complex distributed systems problems, I find my balance in other systems:
     </p>
-    <p>
-      As for Video Games, I enjoy a large range of different types of games in different platforms
-      (Yes, I own a Steam account, a PS4 and a Nintendo Switch). But some of my favourites would be
-      Bloodborne, Sekiro: Shadows Die Twice, Warframe, Final Fantasy 8 and The Witcher 3 (I could go on...).
-    </p>
-    <p>
-      I am a Software Engineer with more than nine years of experience programming, designing and delivering
-      reliable, scalable and tested applications, meeting both customer and business needs. I have worked
-      in both direct to customer and B2B projects, and am familiar with working in teams of any size. I also
-      have leadership experience, as well as experience with collaborating, mentoring and providing
-      direction to colleagues.
-    </p>
+    <ul>
+      <li>
+        <b><a href="https://soundcloud.com/disco4dummies" target="_blank">Music</a>:</b> I spent my 20s as a DJ and audio editor, which taught me the importance of "flow" and technical precision.
+      </li>
+      <li>
+        <b>The Home Lab:</b> I am a home automation enthusiast, constantly tweaking my local ecosystem to work more effectively and efficiently for me and my family.
+      </li>
+      <li>
+        <b><a href="https://www.strava.com/athletes/joaosomoreira" target="_blank">Endurance</a>:</b> I am an avid runner, finding that the discipline of a marathon mirrors the long-term focus needed to lead major technical migrations. I am currently attempting to qualify to run the Boston Marathon (3 hours or less!). I also occasionally enjoy playing basketball, but not nearly to the same level I did when I played for a team many years ago.
+      </li>
+      <li>
+        <b>Family:</b> As a new parent, I've found a renewed drive to build technology that makes a meaningful impact on how families live and receive care.
+      </li>
+      <li>
+        <b>The Video Games:</b> When I get the (nowadays very rare) opportunity to sit down and unwind, one of my choices for things to do is playing Video Games. The options right now are either through a PS5, PSVR2 (if I'm feeling physical) or a Nintendo Switch 2. I can go on and on about certain games, such as Bloodborne, Dark Souls, Elden Ring, most Final Fantasy games, Warframe, etc.
+      </li>
+    </ul>
     <a
       href="https://github.com/JoaoSouMoreira/personal-site"
       target="_blank"
@@ -74,7 +70,7 @@ export default {
   name: 'IntroductionSection',
   data() {
     return {
-      age: this.getYears('1989-07-28'),
+      age: this.getYears('1989-01-01'),
     };
   },
   methods: {
@@ -96,6 +92,7 @@ export default {
   flex-direction: column;
   width: 100%;
   margin-top: 50px;
+  line-height: 1.2rem;
 
   .details-container {
     display: flex;
@@ -103,8 +100,8 @@ export default {
     margin-bottom: 20px;
   }
 
-  p {
-    margin: 10px auto;
+  p, ul {
+    margin: 10px 0;
 
     a {
       color: variables.$color-primary;

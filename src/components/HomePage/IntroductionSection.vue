@@ -36,23 +36,26 @@
     </p>
     <h3>Beyond the Code</h3>
     <p>
-      While I spend my days solving complex distributed systems problems, I find my balance in other systems:
+      While I spend my days solving complex distributed systems problems, I find my balance in other ways:
     </p>
     <ul>
       <li>
         <b><a href="https://soundcloud.com/disco4dummies" target="_blank">Music</a>:</b> I spent my 20s as a DJ and audio editor, which taught me the importance of "flow" and technical precision.
       </li>
       <li>
-        <b>The Home Lab:</b> I am a home automation enthusiast, constantly tweaking my local ecosystem to work more effectively and efficiently for me and my family.
+        <b>The Home Lab:</b> I am a home automation enthusiast, constantly tweaking and improving my local system to work more effectively and efficiently for me and my family.
       </li>
       <li>
-        <b><a href="https://www.strava.com/athletes/joaosomoreira" target="_blank">Endurance</a>:</b> I am an avid runner, finding that the discipline of a marathon mirrors the long-term focus needed to lead major technical migrations. I am currently attempting to qualify to run the Boston Marathon (3 hours or less!). I also occasionally enjoy playing basketball, but not nearly to the same level I did when I played for a team many years ago.
+        <b><a href="https://www.strava.com/athletes/joaosomoreira" target="_blank">Endurance</a>:</b> I am an avid runner, finding that the discipline of a marathon mirrors the long-term focus needed to lead major technical projects. I am currently attempting to qualify to run the Boston Marathon (3 hours or less!).
       </li>
       <li>
-        <b>Family:</b> As a new parent, I've found a renewed drive to build technology that makes a meaningful impact on how families live and receive care.
+        <b>Family:</b> As a new parent, I have found a renewed drive to build technology that makes a meaningful impact on how families live and receive care.
       </li>
       <li>
-        <b>The Video Games:</b> When I get the (nowadays very rare) opportunity to sit down and unwind, one of my choices for things to do is playing Video Games. The options right now are either through a PS5, PSVR2 (if I'm feeling physical) or a Nintendo Switch 2. I can go on and on about certain games, such as Bloodborne, Dark Souls, Elden Ring, most Final Fantasy games, Warframe, etc.
+        <b>The Video Games:</b> One of my favorite genres is rogue-like, these types of games test my resilience, focus and preserverance and provide the opportunity for meaningful continuous improvement. When I get the (nowadays very rare) opportunity to sit down and unwind, one of my choices for things to do is playing Video Games. The options right now are either through a PS5, PSVR2 (if I'm feeling physical) or a Nintendo Switch 2. I can go on and on about certain games, such as Bloodborne, Dark Souls, Elden Ring, most Final Fantasy games, Warframe, etc.
+      </li>
+      <li>
+        <b>Coffee:</b> As an enthusiast with a whole setup at home, I have learned that details and small tweaks can have a huge impact on the end product.
       </li>
     </ul>
     <a
